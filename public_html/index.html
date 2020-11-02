@@ -1,55 +1,860 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<!DOCTYPE html>
+<html lang="en-US" class="background-100-e">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Harvey Lab</title>
+		<meta name="description" content="Onepage Parallax Site" />
+		<meta name="keywords" content="onepage, parallax" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
+		<link rel="stylesheet" href="bower_components/minicolors/jquery.minicolors.css" />
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css" />
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-custom.min.css" />
+		<link rel="stylesheet" href="lib/linecons/style.css" />
+		<link rel="stylesheet" href="styles/style.min.css" />
+		<link rel="stylesheet" href="theme-custom.css" />
+		<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+	</head>
+	<body class="state1 background-100-e">
 
-<head>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<link rel="shortcut icon" href="wp-content/themes/astheria/images/favicon.ico" />
-	
-	<title>Ben Harvey</title>
-
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-<link rel='index' title='Ben Harvey' href='index.html' />
-
-</head>
-	<div id="wrapper">
-		<div id="masthead">
-			<br />
-			<a title="Back to the home page" href="index.html"><H1 id="logo">Ben Harvey</a></h1>
-			
-			<ol id="nav">
-	    		<li class="first"><a href="background.html">Background</a></li>
-	     		<li class="second"><a href="research.html">Research</a></li>
-	    		<li class="third"><a href="publications.html">Publications</a></li>
-	    		<li class="last"><a href="contact.html">Contact</a></li>
-	    	</ol>
-	    	<div class="clear"></div>
-	    </div>
-			<hr>
-	 <div class="title">
-	    <span class="emphasise">Marine Ecology, Climate Change and Evolutionary Biology</span>
-		<br><h2>Assistant Professor, Shimoda Marine Research Center, University of Tsukuba, Japan</h2><br><hr>
-	 </div>
-
-		<div id="left-background">
-				<img src="img/index.jpg" width="625px">
-
+		<div class="page-border bottom colors-e background-solid"><a href="#top" class="hover-effect">To <span class="highlight">Top</span></a></div>
+		<div class="page-border left colors-e background-solid">
+			<ul>
+				<li><a href="https://twitter.com/benjaminpharvey/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.facebook.com/univ.tsukuba.SMRC/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.youtube.com/user/marineasty/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			</ul>
 		</div>
+		<!-- BEGIN: Top menu -->
+		<div class="page-border right colors-e background-solid"></div>
+		<nav class="navbar navbar-default navbar-fixed-top page-transition colors-e background-solid" role="navigation" id="top-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="menu-toggle ext-nav-toggle visible-xs-block" data-target=".ext-nav" href="#"><span></span></a>
+					<a class="menu-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#"><span></span></a>
+					<a class="navbar-brand" href="">HARVEY<span class="highlight">LAB</span></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home" class="hover-effect">Home</a></li>
+						<li><a href="#about" class="hover-effect">About</a></li>
+						<li><a href="#team" class="hover-effect">Team</a></li>
+						<li><a href="#research" class="hover-effect">Research</a></li>
+						<li><a href="#publications" class="hover-effect">Publications</a></li>
+						<li><a href="#students" class="hover-effect">Prospective Students</a></li>
+						<li><a href="#contact" class="hover-effect">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END: Top menu -->
+		<ul id="dot-scroll" class="colors-e background-solid"></ul>
+		<div class="overlay-window gallery-overlay colors-f background-95-f" data-overlay-zoom="#publications .content">
+			<div class="overlay-control background-85-d">
+				<a class="previos" href="#"></a>
+				<a class="next" href="#"></a>
+				<a class="cross" href="#"></a>
+			</div>
+			<div class="overlay-view"></div>
+			<ul class="loader">
+				<li class="background-100-d"></li>
+				<li class="background-100-d"></li>
+				<li class="background-100-d"></li>
+			</ul>
+		</div>
+		<div class="overlay-window credits-overlay colors-g background-95-g">
+			<div class="overlay-control background-85-d">
+				<a class="cross" href="#"></a>
+			</div>
+			<div class="overlay-view">
+				<div class="content-container">
+					<h3>Credits</h3>
+					<ul>
+						<li>
+							Video by:
+							<ul>
+								<li><a target="_blank" href="http://mazwai.com/">Mazwai</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0 License</a></li>
+							</ul>
+						</li>
+						<li>
+							Icons by:
+							<ul>
+								<li><a target="_blank" href="http://designmodo.com/">Designmodoh</a>, <a target="_blank" href="http://designmodo.com/linecons-free/">License</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="gate colors-e background-solid">
+			<div class="gate-bar background-highlight-e"></div>
+			<ul class="loader">
+				<li class="background-100-g"></li>
+				<li class="background-90-c"></li>
+				<li class="background-100-f"></li>
+			</ul>
+		</div>
+		<!-- BEGIN: Page content -->
+		<div class="youtube-bg" data-video="2zLQI4Dfi_w" data-mute="yes" data-volume="50" data-alternative="images/placeholders/1920x1500-0.jpg"></div>
+		<section id="home">
+			<div class="view">
+				<div class="content home-mary full-size colors-a">
+					<div class="container">
+						<div class="textillate text-center heading  hidden-xs hidden-sm" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
+							<ul class="texts">
+								<li>Marine Ecology</li>
+								<li>Marine Biology</li>
+								<li>Marine Genomics</li>
+								<li>Climate Change</li>
+								<li>Environmental Modelling</li>
+								<li>Ecosystem Functioning and Services</li>
+							</ul>
+						</div>
+						<h1 class="text-center"><span class="highlight">HARVEY</span>LAB</h1>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<p class="lead text-center">
+									Shimoda Marine Research Center, University of Tsukuba, Japan.<br /> <br />We are a research group that seeks to understand how ongoing and future environmental changes will impact our oceans.
+								</p>
+								<p class="text-center"><a href="#about" class="button background-60-d heading-d border-hard">About Us</a><a href="#publications" class="button background-60-f heading-f border-hard">Publications</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="view">
+				<img alt class="bg" src="images/placeholders/1920x1500-2.jpg" /><img alt class="bg" src="images/placeholders/1920x1500-0.jpg" />
+				<div class="content colors-e">
+					<div class="container">
+						<h2>About</h2>
+						<p class="header-details">We Carry Out <span class="highlight">Multi-displinary Research</span> on Marine Ecosystems</p>
+						<p class="lead">We are a <span class="highlight">Creative Research Group</span> based at the Shimoda Marine Research Center, University of Tsukuba (Japan) that seeks to understand how changes in environmental conditions (focussing on ocean acidification, ocean warming, and marine heatwaves) will change our oceans. We achieve this with a multidisciplinary approach by using a combination of field, experimental, and desk-based approaches.
+						</p>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="col-icon">
+									<i class="li_bulb"></i>
+								</div>
+								<div class="col-content">
+									<h4>Experimental <span class="highlight">Work</span></h4>
+									<p>Trophic Interactions
+									<br />Competition
+									<br /> Ecophysiology and Energy Budgets
+									<br /> Population Genetics
+									<br /> Community Meta-barcoding
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="col-icon">
+									<i class="li_t-shirt"></i>
+								</div>
+								<div class="col-content">
+									<h4>Field<span class="highlight">work</span></h4>
+									<p>Subtidal Surveys and Experiments
+									<br />  Intertidal Surveys and Experiments
+									<br />  Long-term environmental monitoring
+									<br />  Remotely Operated Vehicles (Drone, ROV)
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="col-icon">
+									<i class="li_display"></i>
+								</div>
+								<div class="col-content">
+									<h4>Desk-based <span class="highlight">Work</span></h4>
+									<p>Meta-analysis
+									<br /> Statistical Modelling (in R)
+									<br /> Environmental Modelling (in R)
+									<br /> Theoretical Ecology
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>		
+			<div class="view gallery-page">
+				<img alt class="bg" src="images/placeholders/1920x900-2.jpg" /><img alt class="bg" src="images/placeholders/1920x900-3.jpg" />
+				<div class="content">
+					<div class="view-wrapper">
+						<div class="view">
+							<div class="item-content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="slider">
+												<div><img alt="Research 1" src="images/research/about-1.jpg" /></div>
+												<div><img alt="Research 2" src="images/research/about-2.jpg" /></div>
+												<div><img alt="Research 3" src="images/research/about-3.jpg" /></div>
+												<div><img alt="Research 4" src="images/research/about-4.jpg" /></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>								
+		</section>
+		<section id="team">
+			<div class="view">
+				<img alt class="bg" src="images/placeholders/1920x1500-1.jpg" /><img alt class="bg" src="images/placeholders/1920x1500-2.jpg" />
+				<div class="content colors-e">
+					<div class="container">
+						<h2>Team</h2>
+						<p class="header-details"><span class="highlight">Who </span>We Are</p>
+						<p class="lead">Our success depends on the <strong class="highlight">strength of our team and collaborators.</strong> <br /><br />We work with colleagues at the Shimoda Marine Research Center, as well as internationally with a number of different researchers worldwide.
+						</p>
+						<div class="row">
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Ben Harvey" src="images/our-team/harvey-760x828.jpg" title="Ben Harvey" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Assistant Professor. Marine Ecology, Ecophysiology, Genetics, Meta-analysis, and Ecological Modelling.  
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												<a target="_blank" href="https://twitter.com/benjaminpharvey/"><i class="fa fa-twitter heading-b"></i></a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Ben Harvey</span>
+										<br/>
+										<span class="highlight">Principal Investigator<br /> </span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Sylvain Agostini" src="images/our-team/agostini-760x828.jpg" title="Sylvain Agostini" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Assistant Professor. Coral Ecophysiology and Ecology.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Sylvain Agostini</span>
+										<br/>
+										<span class="highlight">Collaborator<br />University of Tsukuba</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Shigeki Wada" src="images/our-team/wada-760x828.jpg" title="Shigeki Wada" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Assistant Professor. Marine Biogeochemistry, Ecosystem Functioning, and Carbon Sequestration.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Shigeki Wada</span>
+										<br/>
+										<span class="highlight">Collaborator<br />University of Tsukuba</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Koetsu Kon" src="images/our-team/kon-760x828.jpg" title="Koetsu Kon" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Assistant Professor. Intertidal Community Ecology, and Behavioural Ecology.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Koetsu Kon</span>
+										<br/>
+										<span class="highlight">Collaborator<br />University of Tsukuba</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Lucia Porzio" src="images/placeholders/380x414-1.jpg" title="Lucia Porzio" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Assistant Professor. Marine Phycology and Taxonomy.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Lucia Porzio</span>
+										<br/>
+										<span class="highlight">Collaborator<br />University of Tsukuba</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Bayden Russell" src="images/our-team/russell-380x414.jpg" title="Bayden Russell" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Associate Professor. Marine Community Ecology, Ecophysiology, and Genetics.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Bayden Russell</span>
+										<br/>
+										<span class="highlight">Collaborator<br />University of Hong Kong</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Jason Hall-Spencer" src="images/our-team/hallspencer-760x828.jpg" title="Jason Hall-Spencer" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Professor. Marine Ecology, Natural History and Taxonomy.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Jason Hall-Spencer</span>
+										<br/>
+										<span class="highlight">Collaborator &amp; Mentor<br />University of Plymouth<br/>University of Tsukuba</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Sean Connell" src="images/our-team/connell-760x828.jpg" title="Sean Connell" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Professor. Community Ecology, Ecosystem Function, and Climate Change Processes.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Sean Connell</span>
+										<br/>
+										<span class="highlight">Collaborator &amp; Mentor<br />University of Adelaide</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<h3><span class="highlight">Together we want to understand</span><br/>how our oceans will be shaped by future conditions</h3>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<p class="text-center"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="research">
+			<div class="view">
+				<img alt class="bg" src="images/placeholders/1920x1500-0.jpg" /><img alt class="bg" src="images/placeholders/1920x1500-1.jpg" />
+				<div class="content colors-e">
+					<div class="container">
+						<h2>Research</h2>
+						<p class="header-details"><span class="highlight">Current and Ongoing </span>Research</p>
+						<p class="lead">We are broadly interested in how our oceans <span class="highlight">respond to change</span>. Our current research includes work on: </p>
+							<ul class="simple">
+								<li>The state of marine ecosystems, where we seek to understand the underlying processes controlling and maintaining these systems. </li>
+								<li>How marine ecosystems have changed in the past and how global climate and environmental change will influence them into the future. </li>
+								<li>The impact of changes in the dominant key habitat-forming species. </li>
+								<li>The implications of an altered marine ecosystem, in terms of ecosystem functioning and goods and services derived from these systems will be impacted. </li>
+								<li>How the stability of marine ecosystems will be altered by global climate and environmental change, and how this will influence ecosystem management</li>
+							</ul>
+						<div class="row">						
+							<div class="col-md-3 top-line">
+								<h4>Acidification<br />&amp;Warming</h4>
+								<p class="highlight">Experimental <br /> Fieldwork <br /> Desk-based</p>
+								<p>Our ocean acidification research is performed using: <br /><br />Field and manipulative experiments in Natural CO<sub>2</sub> seeps in Japan, Italy and New Zealand, and latitiudal gradients in temperature <br /><br />Experimentally with CO<sub>2</sub>- and temperature controlled aquarium mesocosms <br /><br />Synthesis of literature using meta-analytical and other statistical techniques</p> 
+							</div>
+							<div class="col-md-3 top-line">
+								<h4>Marine<br />heatwaves</h4>
+								<p class="highlight">Experimental <br />  <br /> Desk-based</p>
+								<p>Our marine heatwaves research is performed using modelling to assess trends and patterns in marine heatwaves<br /><br />Experimentally with aquarium mesocosms.</p>
+							</div>
+							<div class="col-md-3 top-line">
+								<h4>Ecosystem<br />Stability</h4>
+								<p class="highlight">Experimental <br /> Fieldwork <br /> Desk-based</p>
+								<p>Excepteur sint occaecat elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+							</div>
+							<div class="col-md-3 top-line">
+								<h4>Ecosystem<br />Management</h4>
+								<p class="highlight">Experimental <br /> Fieldwork <br /> Desk-based</p>
+								<p>Our ocean warming research is performed using: <br /><br /> latitiudal gradients in temperature, <br /><br />Experimentally with aquarium mesocosms, and <em>via</em><br /><br />Synthesis of literature using meta-analytical techniques</p> 
+							</div>
+						</div>
+						<div class="row">
+							<div class="gallery background-e" data-overlay=".gallery-overlay">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="grid">						
+											<div class="item col-md-3 col-sm-4 col-xs-6">
+												<a href="#!research-item-1.html">
+												<img alt="Research 1" src="images/research/research-oaw.jpg" />
+												</a>
+											</div>
+											<div class="item col-md-3 col-sm-4 col-xs-6">
+												<a href="#!research-item-2.html">
+												<img alt="Research 2" src="images/research/research-mhw.jpg" />
+												</a>
+											</div>
+											<div class="item col-md-3 col-sm-4 col-xs-6">
+												<a href="#!research-item-3.html">
+												<img alt="Research 3" src="images/research/research-stability.jpg" />
+												</a>
+											</div>									
+											<div class="item col-md-3 col-sm-4 col-xs-6">
+												<a href="#!research-item-4.html">
+												<img alt="Research 4" src="images/research/research-management.jpg" />
+												</a>
+											</div>									
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<p class="lead">Click on the thumbnails for more detailed information on our research</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="publications">
+			<div class="view">
+				<img alt class="bg" src="images/placeholders/1920x1500-2.jpg" /><img alt class="bg" src="images/placeholders/1920x1500-0.jpg" />
+				<div class="content no-bottom-padding colors-e">
+					<div class="container">
+						<h2>Our <span class="highlight">Publications</span></h2>
+						<p class="header-details"><span class="highlight"> </span></p>
+						<p class="lead">Click on the thumbnails for more detailed information on each publication</p>
+					</div>
+					<div class="gallery background-e" data-default-group="all" data-overlay=".gallery-overlay">
+						<div class="container-fluid">
+							<div class="filter">
+								<ul class="nav nav-pills text-center">
+									<li><a class="hover-effect" data-group="all" href="#">All</a></li>
+									<li><a class="hover-effect" data-group="oa" href="#">Ocean Acidification</a></li>
+									<li><a class="hover-effect" data-group="ow" href="#">Ocean Warming</a></li>
+									<li><a class="hover-effect" data-group="mhw" href="#">Marine Heatwaves</a></li>
+									<li><a class="hover-effect" data-group="biogeography" href="#">Biogeography</a> </li>
+									<li><a class="hover-effect" data-group="other" href="#">Other</a> </li>
 
-		<div id="right-background">
-			<h3>Latest Article</h3>
-			<p>Cattano, C., Agostini, S., <strong>Harvey, B.P.</strong>, Wada, S., Quattrocchi, F., Turco, G., Inaba, K., Hall-Spencer, J.M., and Milazzo, M (2020) Changes in fish communities due to benthic habitat shifts under ocean acidification conditions. <i>Science of The Total Environment</i> 725:138501.<br><br></p>			
-
-		</div>					
-
-	<div class="clear"></div>
-	
-<div id="footer">
-	<div id="footerabout">	
-   	<span><a href="mailto:harvey.benjaminpaul@gmail.com"><img src="img/mail.png" height="15px"> Email</a> | </span><span><a href="http://twitter.com/benjaminpharvey"><img src="img/twitter.png" height="15px"> Twitter</a></span><span> | <a href="https://www.researchgate.net/profile/Ben_Harvey3/"><img src="img/researchgate.png" height="15px"> Research Gate</a></span>
-	</div>	
-
-	<div class="clear"></div>	
-	</div> <!--/wrapper-->
+								</ul>
+							</div>
+							<div class="row">
+								<div class="grid">
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa","biogeography"]'>
+										<a href="#!publication-item-19.html" class="hover-overlay">
+											<img alt="Publication 19" src="images/publications/publication_19.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Cattano et al. (2020)</strong> Changes in fish communities due to benthic habitat shifts under ocean acidification conditions, <em>Science of the Total Environment</em>, 138501</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["other"]'>
+										<a href="#!publication-item-18.html" class="hover-overlay">
+											<img alt="Publication 18" src="images/publications/publication_18.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey et al. (2020)</strong> Survey Techniques in Marine Ecology, IN: <em>Japanese Marine Life</em></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["other"]'>
+										<a href="#!publication-item-17.html" class="hover-overlay">
+											<img alt="Publication 17" src="images/publications/publication_17.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Agostini et al. (2020)</strong> Experiment Design in Marine Environmental Sciences, IN: <em>Japanese Marine Life</em></p>
+												</div>
+											</div>
+										</a>
+									</div>									
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["other"]'>
+										<a href="#!publication-item-16.html" class="hover-overlay">
+											<img alt="Publication 16" src="images/publications/publication_16.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Agostini et al. (2020)</strong> Marine Ecology: Temperate to Tropical, IN: <em>Japanese Marine Life</em></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-15.html" class="hover-overlay">
+											<img alt="Publication 15" src="images/publications/publication_15.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Kerfahi et al. (2020)</strong> Responses of intertidal bacterial biofilm communities to increasing <em>p</em>CO<sub>2</sub>, <em>Marine Biotechnology</em>, doi: 10.1007/s10126-020-09958-3</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-14.html" class="hover-overlay">
+											<img alt="Publication 14" src="images/publications/publication_14.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey et al. (2019)</strong> Diatoms dominate and alter marine food-webs when CO<sub>2</sub> rises, <em>Diversity</em>, 11, 242</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["mhw","biogeography"]'>
+										<a href="#!publication-item-13.html" class="hover-overlay">
+											<img alt="Publication 13" src="images/publications/publication_13.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Straub et al. (2019)</strong> Resistance, extinction, and everything in between – The diverse responses of seaweeds to marine heatwaves, <em>Frontiers in Marine Science</em>, 6, 763</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-12.html" class="hover-overlay">
+											<img alt="Publication 12" src="images/publications/publication_12.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Witkowski et al. (2019)</strong> Validation of carbon isotope fractionation in algal lipids as a <em>p</em>CO<sub>2</sub> proxy using a natural CO<sub>2</sub> seep (Shikine Island, Japan), <em>Biogeosciences</em>, 16, 4451-4461</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-11.html" class="hover-overlay">
+											<img alt="Publication 11" src="images/publications/publication_11.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Hall-Spencer &amp; Harvey (2019)</strong> Ocean acidification impacts on coastal ecosystem services due to habitat degradation, <em>Emerging Topics in Life Sciences</em>, 3, 197-206</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["mhw","biogeography"]'>
+										<a href="#!publication-item-10.html" class="hover-overlay">
+											<img alt="Publication 10" src="images/publications/publication_10.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Smale et al. (2019)</strong> Marine heatwaves threaten global biodiversity and the provision of ecosystem services, <em>Nature Climate Change</em>, 9, 306-312</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-9.html" class="hover-overlay">
+											<img alt="Publication 9" src="images/publications/publication_9.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Fitzer et al. (2019)</strong> Established and emerging techniques for characterising the formation, structure and performance of calcified structures under ocean acidification, <em>Oceanography and Marine Biology: An Annual Review</em>, 57, 57-94</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-8.html" class="hover-overlay">
+											<img alt="Publication 8" src="images/publications/publication_8.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Hirano et al. (2019)</strong> The influence of CO<sub>2</sub> seeps to coastal environments of Shikine island in japan as indicated by geochemistry analyses of seafloor sediments, <em>International Journal of GEOMATE</em>, 16, 82-89</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-7.html" class="hover-overlay">
+											<img alt="Publication 7" src="images/publications/publication_7.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey et al. (2018)</strong> Dissolution: The Achilles’ heel of the triton shell in an acidifying ocean, <em>Frontiers in Marine Science</em>, 5, 371</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa","biogeography"]'>
+										<a href="#!publication-item-6.html" class="hover-overlay">
+											<img alt="Publication 6" src="images/publications/publication_6.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Agostini et al. (2018)</strong> Ocean acidification drives community shifts towards simplified non-calcified habitats in a subtropical−temperate transition zone, <em>Scientific Reports</em>, 8, 11354</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa","ow"]'>
+										<a href="#!publication-item-5.html" class="hover-overlay">
+											<img alt="Publication 5" src="images/publications/publication_5.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey &amp; Moore (2016)</strong> Ocean warming and acidification prevents compensatory response in a predator to reduced prey quality, <em>Marine Ecology Progress Series</em>, 563, 111-122</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa"]'>
+										<a href="#!publication-item-4.html" class="hover-overlay">
+											<img alt="Publication 4" src="images/publications/publication_4.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey et al. (2016)</strong> Linking individual and population-level responses to climate change, <em>Scientific Reports</em>, 6, 20194</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa","ow"]'>
+										<a href="#!publication-item-3.html" class="hover-overlay">
+											<img alt="Publication 3" src="images/publications/publication_3.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey et al. (2014)</strong> Evolution of marine organisms under climate change at different levels of biological organisation, <em>Water</em>, 6 (11), 3545-3574</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa","ow","biogeography"]'>
+										<a href="#!publication-item-2.html" class="hover-overlay">
+											<img alt="Publication 2" src="images/publications/publication_2.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Brodie et al. (2014)</strong>  The future of the NE Atlantic benthic flora in a high CO<sub>2</sub> world, <em>Ecology and Evolution</em>, 4 (13), 2787-2798</p>
+												</div>
+											</div>
+										</a>
+									</div>									
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["oa","ow"]'>
+										<a href="#!publication-item-1.html" class="hover-overlay">
+											<img alt="Publication 1" src="images/publications/publication_1.jpg" />
+											<div class="overlay background-90-e">
+												<div class="hidden-xs">
+													<p class="text-center heading-e"><strong>Harvey et al. (2013)</strong> Meta-analysis reveals complex biological responses to the combined effects of ocean acidification and warming, <em>Ecology and Evolution</em>, 3 (4), 1016-1030</p>
+												</div>
+											</div>
+										</a>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="students">
+			<div class="view">
+				<img alt class="bg" src="images/placeholders/1920x1500-0.jpg" /><img alt class="bg" src="images/placeholders/1920x1500-1.jpg" />
+				<div class="content colors-e">
+					<div class="container">
+						<h2>Prospective <span class="highlight">Students</span></h2>
+						<p class="header-details">How to <span class="highlight">join the lab</span></p>
+						<p class="lead">We are always looking for students interested in marine biology and ecology (PhD, Honours & MSc students). All projects are possible.</p>
+						<p class="lead">Internships are possible through the <a href="http://www.global.tsukuba.ac.jp/summer/shimoda-international-internship-marine-biology"> Shimoda International Internship Program in Marine Biology</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="view">
+				<img alt class="bg" src="images/placeholders/1920x900-2.jpg" /><img alt class="bg" src="images/placeholders/1920x900-0.jpg" /><img alt class="bg" src="images/placeholders/1920x900-1.jpg" />
+				<div class="content full-size colors-h">
+					<div class="container">
+						<h2>Contact</h2>
+						<p class="header-details">Get In Touch</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="text-right scroll-in-animation" data-animation="fadeInLeft">
+									<p class="big-font uppercase">
+										Dr. Ben Harvey
+										<br />Shimoda Marine Research Center
+										<br />University of Tsukuba
+										<br />Shimoda, Shizuoka
+										<br/> 415-0025, Japan
+									</p>
+									<p class="big-font">
+										<b>
+									<a href="mailto:ben.harvey@shimoda.tsukuba.ac.jp">ben.harvey@shimoda.tsukuba.ac.jp</a><br/>
+									<a href="http://www.shimoda.tsukuba.ac.jp/eng-home.html">www.shimoda.tsukuba.ac.jp/eng-home.html</a>
+								</b>
+									</p>
+									<p class="big-font">
+										<a target="_blank" href="https://twitter.com/benjaminpharvey/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-twitter fa-stack-1x text-background"></i></span></a>
+										<a target="_blank" href="https://www.facebook.com/univ.tsukuba.SMRC/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-facebook fa-stack-1x text-background"></i></span></a>
+										<a target="_blank" href="http://www.youtube.com/user/marineasty/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-youtube fa-stack-1x text-background"></i></span></a>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<img src = images/placeholders/150x150-0.jpg> <img src = images/placeholders/150x150-1.jpg> <img src = images/placeholders/150x150-2.jpg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Page content -->
+		<!-- BEGIN: Footer -->
+		<footer class="colors-g page-transition non-preloading">
+			<div class="container scroll-in-animation" data-animation="fadeInDown">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Harvey<span class="highlight">Lab</span></h4>
+						<div class="footer-description">
+							<p>Shimoda Marine Research Center <br />University of Tsukuba<br />Japan</p>
+						</div>
+						<p class="social-links">
+							<a target="_blank" href="https://twitter.com/benjaminpharvey/"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" href="https://www.facebook.com/univ.tsukuba.SMRC/"><i class="fa fa-facebook"></i></a>
+							<a target="_blank" href="http://www.youtube.com/user/marineasty/"><i class="fa fa-youtube"></i></a>	
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom text-center background-10-b">
+				© 2020 All Rights Reserved. <a href="#" class="open-overlay-window heading" data-overlay-window=".credits-overlay">Credits.</a>
+			</div>
+		</footer>
+		<!-- END: Footer -->
+		<script>
+		if (typeof(atob) == "undefined")
+		{
+			document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
+			var atob = function(x)
+			{
+				return base64.decode(x);
+			}
+		}
+		</script>
+		<script src="bower_components/less.js/dist/less.min.js"></script>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="lib/tween/tween.min.js"></script>
+		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="lib/modernizr-edited.js"></script>
+		<script src="lib/SmoothScroll-1.4.9/SmoothScroll.js"></script>
+		<script src="bower_components/jquery-cookie/jquery.cookie.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="bower_components/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js"></script>
+		<script src="bower_components/minicolors/jquery.minicolors.min.js"></script>
+		<script src="bower_components/slick.js/slick/slick.min.js"></script>
+		<script src="bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
+		<script src="bower_components/textillate/assets/jquery.lettering.js"></script>
+		<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
+		<script src="bower_components/textillate/jquery.textillate.js"></script>
+		<script src="lib/prism/prism.js"></script>
+		<script>
+		(function()
+		{
+			var disableMobileAnimations = true;
+			var isWin = navigator.appVersion.indexOf("Win") !== -1;
+			if (isWin) $('html').addClass('win');
+			var ua = navigator.userAgent.toLowerCase();
+			var isChrome = ua.indexOf('chrome') > -1;
+			if (isChrome) $('html').addClass('chrome');
+			var isAndroidBrowser4_3minus = ((ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('android ') > -1 && ua.indexOf('applewebkit') > -1) && !(ua.indexOf('chrome') > -1));
+			if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
+			var isSafari = !isChrome && ua.indexOf('safari') !== -1;
+			if (isSafari) $('html').addClass('safari');
+			var isMobile = false; //Change false to Modernizr.touch if you want to disable animations on touchscreen devices;
+			if (isMobile)
+			{
+				$('html').addClass('mobile');
+				if (disableMobileAnimations) $('html').addClass('poor-browser');
+			}
+			else
+			{
+				$('html').addClass('non-mobile');
+			}
+			if (isWin && isSafari)
+			{
+				$('html').addClass('flat-animation');
+			}
+		})();
+		</script>
+		<script src="scripts/script-bundle.js"></script>
+		<script>
+		if (Function('/*@cc_on return document.documentMode===9@*/')())
+		{
+			$('html').addClass('ie9');
+		}
+		if (Function('/*@cc_on return document.documentMode===10@*/')())
+		{
+			$('html').addClass('ie10');
+		}
+		if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
+		{
+			$('html').addClass('ie11');
+		}
+		</script>
+	</body>
 </html>
